@@ -109,69 +109,69 @@ function textanimation() {
 textanimation();
 
 gsap.from("#box1", {
-    y: 50,
-    opacity: 0,
-    duration: 0.5,
-    delay: 0.5,
-    stagger: 0.2,
-    ease: Power3,
-    scrollTrigger: {
-        trigger: "#page3",
-        scroller: "#main",
-        markers: true,
-        start: "top 50%",
-        end: "bottom 90%",
-        markers: false
-    }
-  });
+  y: 50,
+  opacity: 0,
+  duration: 0.5,
+  delay: 0.5,
+  stagger: 0.2,
+  ease: Power3,
+  scrollTrigger: {
+    trigger: "#page3",
+    scroller: "#main",
+    markers: true,
+    start: "top 50%",
+    end: "bottom 90%",
+    markers: false,
+  },
+});
 gsap.from("#box2", {
-    y: 50,
-    opacity: 0,
-    duration: 0.5,
-    delay: 0.6,
-    stagger: 0.2,
-    ease: Power3,
-    scrollTrigger: {
-        trigger: "#page3",
-        scroller: "#main",
-        markers: true,
-        start: "top 40%",
-        end: "bottom 80%",
-        markers: false
-    }
-  });
+  y: 50,
+  opacity: 0,
+  duration: 0.5,
+  delay: 0.6,
+  stagger: 0.2,
+  ease: Power3,
+  scrollTrigger: {
+    trigger: "#page3",
+    scroller: "#main",
+    markers: true,
+    start: "top 40%",
+    end: "bottom 80%",
+    markers: false,
+  },
+});
 gsap.from("#box3", {
-    y: 50,
-    opacity: 0,
-    duration: 0.5,
-    delay: 0.7,
-    stagger: 0.2,
-    ease: Power3,
-    scrollTrigger: {
-        trigger: "#page3",
-        scroller: "#main",
-        markers: true,
-        start: "top 30%",
-        end: "bottom 70%",
-        markers: false
-    }
-  });
+  y: 50,
+  opacity: 0,
+  duration: 0.5,
+  delay: 0.7,
+  stagger: 0.2,
+  ease: Power3,
+  scrollTrigger: {
+    trigger: "#page3",
+    scroller: "#main",
+    markers: true,
+    start: "top 30%",
+    end: "bottom 70%",
+    markers: false,
+  },
+});
 gsap.from("#box4", {
-    y: 50,
-    opacity: 0,
-    duration: 0.5,
-    delay: 0.9,
-    stagger: 0.2,
-    ease: Power3,
-    scrollTrigger: {
-        trigger: "#page3",
-        scroller: "#main",
-        markers: true,
-        start: "top 20%",
-        end: "bottom 60%",
-        markers: false
-    }
-  });
+  y: 50,
+  opacity: 0,
+  duration: 0.5,
+  delay: 0.9,
+  stagger: 0.2,
+  ease: Power3,
+  scrollTrigger: {
+    trigger: "#page3",
+    scroller: "#main",
+    markers: true,
+    start: "top 20%",
+    end: "bottom 60%",
+    markers: false,
+  },
+});
 
 function imgPointer() {
   let pointer = document.querySelector(".crsr");
@@ -197,3 +197,11 @@ function imgPointer() {
   });
 }
 imgPointer();
+
+const menu = document.querySelector("#hamburger-menu");
+const menuBar = document.querySelector("#menu-bar");
+menu.addEventListener("click", () => {
+  menu.classList.toggle("isactive");
+  menuBar.classList.toggle("isactive")
+});
+

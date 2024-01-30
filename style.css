@@ -57,8 +57,60 @@ body {
   background-color: #f7f7f7;
   padding: 10px;
   gap: 5vw;
+  cursor: pointer;
+}
+#hamburger-menu{
+  display: block;
+  height: 20px;
+  width: 20px;
 }
 
+#hamburger-menu::after, #hamburger-menu::before{
+  content: "";
+  display: block;
+  height: 1.5px;
+  width: 100%;
+  background-color: black;
+  margin: 6px 0px;
+  transition: 0.4s;
+}
+
+#hamburger-menu.isactive::before{
+  transform: rotate(-45deg) translate(-6px, 3px);
+}
+
+#hamburger-menu.isactive::after{
+  transform: rotate(45deg) translate(-3px, 1px);
+}
+#menu-bar{
+  display: block;
+  position: fixed;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  min-height: 100vh;
+  background-color: black;
+  z-index: 98;
+  padding-top: 190px;
+  padding-right: 20px;
+  transition: 0.4s;
+}
+#menu-bar.isactive{
+  top: 0;
+}
+#menu-bar a{
+  display: block;
+  text-align: right;
+  font-family: futura;
+  font-size: 5rem;
+  color: white;
+  text-decoration: none;
+  line-height: 80px;
+  transition: 0.4s;
+}
+#menu-bar a:hover{
+  color: #222;
+}
 .crsr {
   height: 20vw;
   width: 20vw;
