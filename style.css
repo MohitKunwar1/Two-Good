@@ -26,7 +26,6 @@ body {
   z-index: 99;
 }
 .nav-bar .left {
-  /* background-color: red; */
   height: 80px;
   overflow: hidden;
 }
@@ -138,7 +137,6 @@ body {
 .media {
   height: 100vh;
   width: 100%;
-  /* background-color: grey; */
   margin-top: 1vw;
   overflow: hidden;
   position: relative;
@@ -173,7 +171,6 @@ body {
 #page2 .elem {
   height: 90%;
   width: 32%;
-  /* background-color: teal; */
   overflow: hidden;
   position: relative;
   display: flex;
@@ -221,7 +218,6 @@ body {
 #page3 .box {
   height: 55vh;
   width: 43vw;
-  /* background-color: hotpink; */
   margin-top: 20vw;
   display: flex;
   align-items: center;
@@ -239,7 +235,6 @@ body {
   #page1 {
     min-height: 60vh;
     width: 100%;
-    /* background-color: teal; */
     position: relative;
     padding: 0 1vw;
     padding-top: 20vh;
@@ -269,7 +264,6 @@ body {
   #page2 {
     min-height: 60vh;
     width: 100%;
-    /* background-color: aqua; */
     position: relative;
     display: flex;
     flex-direction: column;
