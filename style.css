@@ -1,0 +1,248 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+body {
+  background-color: #f7f7f7;
+}
+*::selection {
+  color: White;
+  background-color: #000;
+}
+.nav-bar {
+  position: fixed;
+  height: 13vh;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 1vw 2vw;
+  z-index: 99;
+}
+.nav-bar .left {
+  /* background-color: red; */
+  height: 80px;
+  overflow: hidden;
+}
+.left svg {
+  display: block;
+}
+.nav-bar .right {
+  display: flex;
+  gap: 5vw;
+}
+.links {
+  display: flex;
+  gap: 5vw;
+}
+.links a {
+  color: #222;
+  padding-top: 10px;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 100;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.right .icons {
+  display: flex;
+  border-radius: 50px;
+  background-color: #f7f7f7;
+  padding: 10px;
+  gap: 5vw;
+}
+
+.crsr {
+  height: 20vw;
+  width: 20vw;
+  background-color: #6bcf90c3;
+  border-radius: 50%;
+  position: fixed;
+  transform: translate(-50%, -50%) scale(0);
+}
+#page1 {
+  min-height: 100vh;
+  width: 100%;
+  /* background-color: teal; */
+  position: relative;
+  padding: 0 1vw;
+  padding-top: 20vh;
+}
+
+#page1 h1 {
+  font-family: futura;
+  font-size: 15.5vw;
+  text-transform: uppercase;
+  line-height: 13vw;
+  letter-spacing: -9px;
+}
+.media {
+  height: 100vh;
+  width: 100%;
+  /* background-color: grey; */
+  margin-top: 1vw;
+  overflow: hidden;
+  position: relative;
+}
+.circle {
+  padding: 4vw 3vw;
+  color: white;
+  font-size: 1.2vw;
+  position: fixed;
+  background-color: black;
+  font-family: futura;
+  border-radius: 50%;
+  opacity: 0;
+  scale: 0;
+}
+.media video {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  cursor: pointer;
+}
+#page2 {
+  min-height: 100vh;
+  width: 100%;
+  /* background-color: aqua; */
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3vw 1vw;
+}
+#page2 .elem {
+  height: 90%;
+  width: 32%;
+  /* background-color: teal; */
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#page2 .elem img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  scale: 1.2;
+}
+.elem .bar {
+  position: absolute;
+  height: 50px;
+  width: 70%;
+  background-color: #f5dfcf;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  transition: all ease-out 0.2s;
+}
+.bar:hover {
+  height: 200px;
+}
+.first {
+  font-size: 12px;
+  font-weight: 100;
+  color: #222;
+}
+.elem .bar h5 {
+  font-family: Arial, Helvetica, sans-serif;
+}
+#page3 {
+  min-height: 120vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  position: relative;
+}
+#page3 .box {
+  height: 55vh;
+  width: 43vw;
+  /* background-color: hotpink; */
+  margin-top: 20vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.box img {
+  height: 100%;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .links{
+    display: none;
+  }
+  #page1 {
+    min-height: 60vh;
+    width: 100%;
+    /* background-color: teal; */
+    position: relative;
+    padding: 0 1vw;
+    padding-top: 20vh;
+  }
+  #page1 h1 {
+    font-size: 15.5vw;
+    text-transform: uppercase;
+    letter-spacing: -3px;
+  }
+  .media {
+    height: 25vh;
+    width: 100%;
+    margin-top: 3vw;
+    overflow: hidden;
+    position: relative;
+  }
+  .circle {
+    padding: 8vw 6vw;
+    font-size: 5vw;
+    position: absolute;
+    opacity: 1;
+    scale: 1;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  #page2 {
+    min-height: 60vh;
+    width: 100%;
+    /* background-color: aqua; */
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5vw 3vw;
+  }
+  #page2 .elem {
+    height: 90%;
+    width: 100%;
+    margin-bottom: 3vw;
+    overflow: hidden;
+  }
+  #page3 {
+    min-height: 120vh;
+    width: 100%;
+    margin-top: 20vw;
+  }
+
+  #page3 .box {
+    height: 20vh;
+    width: 40vw;
+    margin-top: 0;
+  }
+  .crsr {
+    display: none;
+  }
+}
