@@ -228,7 +228,7 @@ body {
 }
 
 /* Responsive */
-@media (max-width: 600px) {
+@media (max-width: 1200px) {
   .links{
     display: none;
   }
